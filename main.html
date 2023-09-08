@@ -11,14 +11,15 @@
 		function secondHighest(arr) {
 			//Write your code here
 			let max=0;
-			let n=arr.length()
+			let n=arr.length();
+			let secMax=-Infinity;
+			if(n<=1)retrun secMax;
 			for (let index = 0; index < n; index++) {
 				if(arr[index]>max)
 				{
 					max=arr[index];
 				}
 			}
-			let secMax=-Infinity;
 			for (let index = 0; index < n; index++) {
 				if(arr[index]>secMax && arr[index]<max)
 				{
